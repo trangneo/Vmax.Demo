@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="160dp"
+    android:layout_margin="3dp"
+    android:padding="5dp"
+    android:background="#212121">
+
+    <RelativeLayout
+        android:id="@+id/itemView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="0dp"
+        android:background="@android:color/white"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:id="@+id/avatar"
+            android:scaleType="centerCrop"
+            android:src="@drawable/default_pic"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_margin="0dp" />
+
+        <TextView
+            android:id="@+id/tvTextContent"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_below="@+id/avatar"
+            android:textColor="@android:color/black"
+            android:text="Phap-Tay Ba Nha"
+            android:textSize="16sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_below="@id/tvTextContent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv1"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:textColor="#989898"
+                android:textSize="10sp"
+                android:text="La Liga 2016/2017"  />
+
+            <TextView
+                android:id="@+id/tv2"
+                android:textSize="10sp"
+                android:textColor="#2685D5"
+                android:layout_width="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_height="match_parent"
+                android:text="1/1" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

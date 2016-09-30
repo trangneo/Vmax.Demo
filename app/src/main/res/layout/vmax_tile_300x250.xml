@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="300dp"
+    android:background="@drawable/vmax_nativeborder">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/vmax_iv_medium_img_cs"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:paddingTop="23dp"
+            android:visibility="gone"/>
+
+        <RelativeLayout
+            android:id="@+id/vmax_media_view"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:paddingTop="23dp"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/vmax_iv_title_cs"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:ellipsize="end"
+            android:lines="1"
+            android:paddingLeft="8dp"
+            android:paddingTop="12dp"
+            android:text="Title Text"
+            android:textColor="@color/vmax_black"
+            android:textSize="15sp"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/vmax_iv_cta_cs"
+            style="@style/style_vmax_button_480"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Call To Action"
+            android:visibility="visible" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="15dp"
+        android:gravity="right">
+
+        <TextView
+            android:id="@+id/vmax_sponsored_cs"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_gravity="center"
+            android:background="@drawable/vmax_nativebg_ad"
+            android:gravity="center"
+            android:paddingLeft="2dp"
+            android:paddingRight="2dp"
+            android:text="@string/vmax_advertisment_text"
+            android:textColor="@color/vmax_black"
+            android:textSize="8sp" />
+    </LinearLayout>
+</RelativeLayout>

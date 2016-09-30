@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@drawable/vmax_nativeborder">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|center"
+        android:gravity="top|center"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|center"
+            android:layout_marginBottom="1dp"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="1dp"
+            android:gravity="top|center"
+            android:orientation="horizontal"
+            android:visibility="visible">
+
+
+            <ImageView
+                android:id="@+id/vmax_custom_icon"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_gravity="left" />
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|center"
+                android:gravity="top|center"
+                android:orientation="vertical"
+                android:weightSum="1.0">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.7"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/vmax_custom_title"
+                        android:layout_width="234dp"
+                        android:layout_height="24dp"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="8dp"
+                        android:text="Title"
+                        android:textColor="@color/vmax_black"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:gravity="right"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/vmax_custom_sponsored"
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:layout_gravity="center"
+                            android:layout_marginRight="2dp"
+                            android:background="@drawable/vmax_nativebg_ad"
+                            android:gravity="center"
+                            android:paddingLeft="2dp"
+                            android:paddingRight="2dp"
+                            android:text="@string/vmax_advertisment_text"
+                            android:textColor="@color/vmax_black"
+                            android:textSize="8sp"
+                            android:visibility="visible" />
+
+                        <FrameLayout
+                            android:id="@+id/vmax_custom_adChoiceView"
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:layout_gravity="center"
+                            android:orientation="vertical"
+                            android:gravity="top|right"
+                            android:paddingLeft="1dp"
+                            android:paddingRight="1dp"
+                            android:visibility="visible">
+
+                        </FrameLayout>
+                    </LinearLayout>
+
+
+                    <!-- <RatingBar
+                         android:id="@+id/vmax_rating_bar"
+                         style="@style/vmaxRatingBar"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:layout_marginTop="5sp"
+                         android:isIndicator="true"
+                         android:numStars="5"
+                         android:stepSize="0.1"
+                         android:visibility="invisible" />-->
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|center"
+                    android:layout_weight="0.3"
+                    android:gravity="bottom|center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/vmax_custom_desc"
+                        android:layout_width="188dp"
+                        android:layout_height="24dp"
+                        android:layout_marginTop="1sp"
+                        android:ellipsize="end"
+                        android:lines="2"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="8dp"
+                        android:text="Description"
+                        android:textColor="@color/vmax_black"
+                        android:textSize="8sp" />
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/vmax_custom_cta"
+                            style="@style/style_vmax_button"
+                            android:layout_width="82dp"
+                            android:layout_height="24dp"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:lines="1"
+                            android:paddingLeft="1dp"
+                            android:paddingRight="1dp"
+                            android:text="Install Now"
+                            android:textAlignment="center" />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/vmax_custom_otherimg"
+            android:layout_width="320dp"
+            android:layout_height="200dp"
+            android:layout_gravity="bottom|center"
+            android:gravity="bottom|center"
+            android:src="@drawable/vmax_logo"
+            android:visibility="visible" />
+
+        <RelativeLayout
+            android:id="@+id/vmax_custom_media_view"
+            android:layout_width="320dp"
+            android:layout_height="200dp"
+            android:layout_gravity="bottom|center"
+            android:gravity="bottom|center"
+            android:visibility="gone">
+
+        </RelativeLayout>
+    </LinearLayout>
+</FrameLayout>
